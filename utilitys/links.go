@@ -11,7 +11,6 @@ func Link(discorddId string) string {
 		"1154144508490043482": `https://masterkey-hq.monday.com/boards/9314274460/views/210772070?filter=XQAAAAJZAQAAAAAAAABBqQqHk62Wwa8yt9cbbXI48HpL2ei1XixEiNVOhiWmf4IrTn4mWIVxz0d8EzlqDpxL1dc7i9JjI1nNW0HEFgqaXhsDsHWTHjMEE6-qlUKWgWTaunFWUdBXUcIiHV2U4yXSu2imTUJEs6hHhIVaPKkVOQEPqNCxAueeXX2TxFm-CPJff8RjFIf3rU67D93QBi5x2PajMHZYxmBWpogN-KFhu504szMZfzawrpN09CZsVIzngQyDEcj_0T8KAA`,
 		//gianino
 		"1266507782446649436": `https://masterkey-hq.monday.com/boards/9314274460/views/210772070?filter=XQAAAAJZAQAAAAAAAABBqQqHk62Wwa8yt9cbbXI48HpL2ei1XixEiNVOhiWmf4IrTn4mWIVxz0d8EzlqDpxL1dc7i9JjI1nNW0HEFgqaXhsDsHWTHjMEE6-qlUKWgWTaunFWUdBXUcIiHV2U4yXSu2imTUJEs6hHhIVaPKkVOQEPqNCxAueeXX2TxFm-CPJff8RjFIf3rU67D93QBi5x2PajMHZYxmBWpogN-KFhu504szMZfzawrpN09CZsVIznfsWTEcj_0T8KAA`,
-		// por el momento no tiene tarea gianino := ``
 		//juan
 		"1313159721061974158": `https://masterkey-hq.monday.com/boards/9314274460/views/210772070?filter=XQAAAAJZAQAAAAAAAABBqQqHk62Wwa8yt9cbbXI48HpL2ei1XixEiNVOhiWmf4IrTn4mWIVxz0d8EzlqDpxL1dc7i9JjI1nNW0HEFgqaXhsDsHWTHjMEE6-qlUKWgWTaunFWUdBXUcIiHV2U4yXSu2imTUJEs6hHhIVaPKkVOQEPqNCxAueeXX2TxFm-CPJff8RjFIf3rU67D93QBi5x2PajMHZYxmBWpogN-KFhu504szMZfzawrpN09CZsVIznh-FTEcj_0T8KAA`,
 		//ricardo
