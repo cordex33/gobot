@@ -1,6 +1,7 @@
 package tools
 
 import (
+	"fmt"
 	types "go-discord-bot/types"
 	"math/rand"
 	"strconv"
@@ -73,5 +74,39 @@ func Send(model []types.Developer) []discordgo.MessageEmbed {
 		num++
 		listembed = append(listembed, a)
 	}
+
 	return listembed
+}
+
+func AwaitName(s *discordgo.Session, m *discordgo.MessageCreate) {
+	channel, _ := s.UserChannelCreate(m.Author.ID)
+
+	//traemos botones con los nombres/id
+	button := PersoButton()
+	//agregamos los botones primera fila
+	actionRow0 := discordgo.ActionsRow{
+		Components: []discordgo.MessageComponent{button[0], button[1], button[2], button[4], button[5]},
+	}
+	//agregamos los botones segunda fila
+	actionRow1 := discordgo.ActionsRow{
+		Components: []discordgo.MessageComponent{button[3], button[6]},
+	}
+	//creamos el embed
+	embeds := []*discordgo.MessageEmbed{{
+		Title:       "Clickea un nombre",
+		Description: "Te traerá las tareas pendientes junto al link de su filtro.",
+		Color:       0x1ABC9C,
+	}}
+
+	//agregamos los botones
+	_, err := s.ChannelMessageSendComplex(channel.ID, &discordgo.MessageSend{
+		Embeds:     embeds,
+		Content:    "Clickea el nombre de la persona que necesites.",
+		Components: []discordgo.MessageComponent{actionRow0, actionRow1},
+	})
+
+	if err != nil {
+		fmt.Println("algo falló al crear la wea de los botones")
+	}
+
 }

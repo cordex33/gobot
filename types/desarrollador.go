@@ -32,3 +32,18 @@ func NewDeveloper(data []string, link string) Developer {
 		Link:         link,
 	}
 }
+
+func NewDeveloperSD(data []string, link string) Developer {
+	return Developer{
+		Tarea:        data[0],
+		Cliente:      data[1],
+		Prioridad:    data[2],
+		Estado:       data[3],
+		Estadokanvan: data[4],
+		FechaRe:      data[5],
+		FechaIni:     data[6],
+		FechaFin:     data[7],
+		DiasDesarro:  data[8],
+		Link:         link,
+	}
+}

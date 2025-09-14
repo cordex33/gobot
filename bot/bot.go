@@ -25,8 +25,9 @@ func InitiBot() {
 		return
 	}
 
-	// Register the messageCreate func as a callback for MessageCreate events.
+	// Register the MondayScrap func as a callback for MessageCreate events.
 	dg.AddHandler(MessageCreate)
+	dg.AddHandler(ButtonInteraction)
 
 	// In this example, we only care about receiving message events.
 	dg.Identify.Intents = discordgo.IntentsGuildMessages
